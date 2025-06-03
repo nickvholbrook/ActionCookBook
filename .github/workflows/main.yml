@@ -17,3 +17,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4.2.2
       - run: tree
+  Test:
+    runs-on: ubuntu-latest
+    environment: Test
+    needs: first_job
